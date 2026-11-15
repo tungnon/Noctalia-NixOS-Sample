@@ -16,8 +16,14 @@ In fact, the config alone is ready to be used for everyday basis with only some 
 5. You do not need to fully master Nix to use this config. But at least use pattern recognition to realize what the config does. And honestly? that's enough.
 
 ## Explaining Defaults
+- Umbriel + Noctalia + Noctalia Greeter: While greeter is not even needed (I use ly myself), this is a sample config to demonstrate Noctalia ecosystem.
+- nh: Once you know how to use nh, you can't practically go back using "official commands".
+- Latest Kernel: I would rather have modern computer working than gambling with LTS kernel which may not work with new hardware.
 - Foot as terminal: most simple terminal for wayland. If you want other options, change it.
 - Firefox as browser: I am not interested in browser war. I use Helium Browser myself but I think Firefox is enough for you to look up and change your stuff.
 - Papirus Icons: Most basic icon theme ever. It works.
 - Bibata Cursor: Same logic as Papirus
-- Thunar as File Manager: Lightweight, fast, and easy to use. It even has community template from Noctalia too.
+- Noto fonts: Same shit as above
+- Thunar as File Manager: Lightweight, fast, and easy to use. It even has community template from Noctalia too. File-roller is chosen for archiver tool because it's convenient. You can delete if you really hate tiny amount of "bloat".
+- nwg-look: This setup is GTK centric, so GUI GTK config tool fits here.
+
