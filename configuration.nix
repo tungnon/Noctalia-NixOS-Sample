@@ -28,7 +28,7 @@
     ];
   };
 
-  # Bootloader
+  # Bootloader - Do not touch it unless you know what you are doing
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 10;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -36,16 +36,16 @@
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  # CHANGE TO SOMETHING ELSE
+  # SPECIFY YOUR HOSTNAME HERE
   networking.hostName = "YOURHOSTNAMEHERE";
 
-  # Set your time zone.
+  # SPECIFY YOUR TIMEZONE HERE
   time.timeZone = "Asia/Bangkok";
 
   # REQUIRED IF YOU WANT STEAM
   nixpkgs.config.allowUnfree = true;
 
-  # Audio
+  # Audio stack
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -63,22 +63,22 @@
     ];
   };
 
-  # Umbriel
+  # Umbriel - Port umbriel config from your previous install is enough
   programs.umbriel.enable = true;
 
-  # Noctalia
+  # Noctalia - If you do not want to worry, config Noctalia via GUI instead
   programs.noctalia = {
     enable = true;
-    # Enables NetworkManager, Bluetooth, UPower, and a power profile service.
-    recommendedServices.enable = true;
+    recommendedServices.enable = true;     # Enables NetworkManager, Bluetooth, UPower, and a power profile service.
   };
 
-  # Noctalia Greeter
+  # Noctalia Greeter - Config noctalia greeter here
   services.displayManager.noctalia-greeter = {
     enable = true;
     settings = {
       cursor.size = 24;
       keyboard.layout = "us";
+      keyboard.numlock = true; # Thanks me later
     };
     cursorTheme = {
       package = pkgs.bibata-cursors;
@@ -86,23 +86,23 @@
     };
   };
 
-  # Polkit (is this needed?)
+  # Polkit - Disable if you hate yourself
   security.polkit.enable = true;
 
-  # Font
+  # Font - Standard fonts stuff
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
   ];
 
-  # nh
+  # nh - Trust me, this makes your life easier. Look up nh if you are curious.
   programs.nh = {
     enable = true;
     flake = "/home/YOURUSERNAME/nixos"; #CHANGE DIRECTORIES IF NEEDED
   };
 
-  # Thunar
+  # Thunar - Most basic file manager ever.
   programs.thunar.enable = true;
   programs.thunar.plugins = with pkgs; [
     thunar-archive-plugin
@@ -113,12 +113,12 @@
   programs.xfconf.enable = true;
   services.udisks2.enable = true;
 
-  # GNOME Keyring
+  # GNOME Keyring - Standard keyring
   services.gnome.gnome-keyring.enable = true;
 
-  # CHANGE GTK3 TO SOMETHING ELSE IF NEEDED
+  # Declare environment variables
   environment.sessionVariables = {
-    QT_QPA_PLATFORMTHEME = "gtk3";
+    QT_QPA_PLATFORMTHEME = "gtk3";  # CHANGE GTK3 TO SOMETHING ELSE IF NEEDED
   };
 
   # CHANGE YOUR BROWSER HERE
@@ -137,6 +137,6 @@
     file-roller # use with thunar
   ];
 
-  system.stateVersion = "26.05"; # Did you read the comment?
+  system.stateVersion = "26.05"; # PAY ATTENTION TO THIS PART
 
 }
