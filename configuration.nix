@@ -66,7 +66,7 @@
   # Umbriel - Port umbriel config from your previous install is enough
   programs.umbriel.enable = true;
 
-  # Noctalia - If you do not want to worry, config Noctalia via GUI instead
+  # Noctalia - Config Noctalia from GUI is a valid choice. You don't have to declare everything.
   programs.noctalia = {
     enable = true;
     recommendedServices.enable = true;     # Enables NetworkManager, Bluetooth, UPower, and a power profile service.
