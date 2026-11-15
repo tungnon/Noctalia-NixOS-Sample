@@ -7,7 +7,7 @@
 }:
 {
   imports = [
-    ./hardware-configuration.nix #THIS IS NOT PROVIDED
+    # ./hardware-configuration.nix **THIS IS NOT PROVIDED**
     inputs.umbriel.nixosModules.default
     inputs.noctalia.nixosModules.default
   ];
@@ -137,6 +137,9 @@
     file-roller # use with thunar
   ];
 
-  system.stateVersion = "26.05"; # PAY ATTENTION TO THIS PART
+  # Compatibility version, NOT your NixOS version
+  # For fresh installs, use the version you installed with
+  # For existing installs, KEEP your original value even after upgrading NixOS
+  system.stateVersion = "26.05"; 
 
 }
