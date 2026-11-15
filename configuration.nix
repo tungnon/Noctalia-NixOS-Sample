@@ -7,7 +7,7 @@
 }:
 {
   imports = [
-    ./hardware-configuration.nix
+    ./hardware-configuration.nix #THIS IS NOT PROVIDED
     inputs.umbriel.nixosModules.default
     inputs.noctalia.nixosModules.default
   ];
@@ -42,7 +42,7 @@
   # SPECIFY YOUR TIMEZONE HERE
   time.timeZone = "Asia/Bangkok";
 
-  # REQUIRED IF YOU WANT STEAM
+  # Unless you are ideological, you are better off enabling unfree software. It's more pragmatic this way.
   nixpkgs.config.allowUnfree = true;
 
   # Audio stack
