@@ -70,8 +70,8 @@
   programs.noctalia = {
     enable = true;
     systemd = {
-      enable = true;
-      target = "umbriel-session.target"; # So it autostarts with umbriel
+      enable = true;                     # So it autostarts with umbriel. 
+      target = "umbriel-session.target"; # If you already have umbriel with noctalia as autostart, REMOVE THIS PART OR REMOVE AUTOSTART FROM UMBRIEL CONFIG.
     };
     recommendedServices.enable = true;     # Enables NetworkManager, Bluetooth, UPower, and a power profile service.
   };
