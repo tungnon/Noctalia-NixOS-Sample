@@ -69,10 +69,7 @@
   # Noctalia - Config Noctalia from GUI is a valid choice. You don't have to declare everything.
   programs.noctalia = {
     enable = true;
-    systemd = {
-      enable = true;                     # So it autostarts with umbriel. If you already have umbriel config with noctalia as autostart, REMOVE THIS PART OR REMOVE AUTOSTART FROM UMBRIEL CONFIG.
-      target = "umbriel-session.target"; 
-    };
+    systemd.enable = true;                     # So it autostarts with umbriel. If you already have umbriel config with noctalia as autostart, REMOVE THIS PART OR REMOVE AUTOSTART FROM UMBRIEL CONFIG.
     recommendedServices.enable = true;     # Enables NetworkManager, Bluetooth, UPower, and a power profile service.
   };
 
