@@ -71,7 +71,7 @@
     enable = true;
     systemd = {
       enable = true;
-      target = "umbriel-session.target";
+      target = "umbriel-session.target"; # So it autostarts with umbriel
     };
     recommendedServices.enable = true;     # Enables NetworkManager, Bluetooth, UPower, and a power profile service.
   };
