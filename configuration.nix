@@ -93,6 +93,11 @@
   services.udisks2.enable = true;
   services.gvfs.enable = true;
 
+  # Portals
+  xdg.portal.config.umbriel = {
+    "org.freedesktop.impl.portal.FileChooser" = [ "luciole" ];
+  };
+
   # Polkit - Disable if you hate yourself
   security.polkit.enable = true;
 
