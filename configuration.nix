@@ -90,8 +90,7 @@
 
   # Luciole - Noctalia File Manager
   programs.luciole.enable = true;
-  services.udisks2.enable = true;
-  services.gvfs.enable = true;
+  services.gvfs.enable = true; # this automatically pulls in udisks by default
 
   # Portals
   xdg.portal.config.umbriel = {
