@@ -1,5 +1,5 @@
 # Noctalia-NixOS-Sample
-Sample NixOS configurations with flakes for Umbriel + Noctalia + Noctalia Greeter
+Sample NixOS configurations with flakes for Umbriel + Noctalia + Noctalia Greeter + Luciole
 
 ## Why?
 Because NixOS has one massive problem: how do we even start this thing? I am here to ease that gap. It won't be perfect but at least it's better than nothing.
@@ -7,6 +7,7 @@ Because NixOS has one massive problem: how do we even start this thing? I am her
 ## Goal
 The config is intentionally minimal and simple to understand. Only nixpkgs umbriel and noctalia are flakes while other stuff are simple and straightforward. No elaborate abstraction like home manager, hjem, impermenance or dendritic.
 In fact, the config alone is ready to be used for everyday basis with only some minor adjustments for your hardware.
+Edit: Luciole has been added because it's file manager for Noctalia ecosystem. Why wouldn't you use it?
 
 ## Things that you need to do first before using these config
 1. **I DO NOT PROVIDE** `hardware-configuration.nix`. Your folder should contain at least these: `flake.nix` `configuration.nix` and `hardware-configuration.nix`. `flake.lock` will be automatically generated. **Do not manually edit it.**
@@ -24,6 +25,5 @@ In fact, the config alone is ready to be used for everyday basis with only some 
 - Papirus Icons: Most basic icon theme ever. It works.
 - Bibata Cursor: Same logic as Papirus
 - Noto fonts: Same shit as above
-- Thunar as File Manager: Lightweight, fast, and easy to use. It even has community template from Noctalia too. File-roller is chosen for archiver tool because it's convenient. You can delete if you really hate tiny amount of "bloat".
 - nwg-look: This setup is GTK centric, so GUI GTK config tool fits here.
 
