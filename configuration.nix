@@ -10,6 +10,7 @@
     # ./hardware-configuration.nix **THIS IS NOT PROVIDED**
     inputs.umbriel.nixosModules.default
     inputs.noctalia.nixosModules.default
+    inputs.luciole.nixosModules.default
   ];
 
   # Flakes Stuff
@@ -87,6 +88,11 @@
     };
   };
 
+  # Luciole - Noctalia File Manager
+  programs.luciole.enable = true;
+  services.udisks2.enable = true;
+  services.gvfs.enable = true;
+
   # Polkit - Disable if you hate yourself
   security.polkit.enable = true;
 
@@ -102,17 +108,6 @@
     enable = true;
     flake = "/home/YOURUSERNAME/nixos"; #CHANGE DIRECTORIES IF NEEDED
   };
-
-  # Thunar - Most basic file manager ever.
-  programs.thunar.enable = true;
-  programs.thunar.plugins = with pkgs; [
-    thunar-archive-plugin
-    thunar-volman
-  ];
-  services.gvfs.enable = true;
-  services.tumbler.enable = true;
-  programs.xfconf.enable = true;
-  services.udisks2.enable = true;
 
   # GNOME Keyring - Standard keyring
   services.gnome.gnome-keyring.enable = true;
@@ -135,7 +130,6 @@
     wl-clipboard # clipboard for wayland duh
     ffmpegthumbnailer # for Thunar video thumbnails
     foot # change to something else
-    file-roller # use with thunar
   ];
 
   # Compatibility version, NOT your NixOS version
