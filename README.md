@@ -5,9 +5,8 @@ Sample NixOS configurations with flakes for Umbriel + Noctalia + Noctalia Greete
 Because NixOS has one massive problem: how do we even start this thing? I am here to ease that gap. It won't be perfect but at least it's better than nothing.
 
 ## Goal
-The config is intentionally minimal and simple to understand. Only nixpkgs umbriel and noctalia are flakes while other stuff are simple and straightforward. No elaborate abstraction like home manager, hjem, impermenance or dendritic.
+The config is intentionally minimal and simple to understand. Only nixpkgs umbriel noctalia and luciole are flakes while other stuff are simple and straightforward. No elaborate abstraction like home manager, hjem, impermenance or dendritic.
 In fact, the config alone is ready to be used for everyday basis with only some minor adjustments for your hardware.
-Edit: Luciole has been added because it's file manager for Noctalia ecosystem. Why wouldn't you use it?
 
 ## Things that you need to do first before using these config
 1. **I DO NOT PROVIDE** `hardware-configuration.nix`. Your folder should contain at least these: `flake.nix` `configuration.nix` and `hardware-configuration.nix`. `flake.lock` will be automatically generated. **Do not manually edit it.**
