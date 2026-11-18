@@ -16,8 +16,9 @@ If this is first time you are using Linux, go back. This rabbit hole isn't for y
 2. Change username and hostname. I do not specify username or hostname. Give these config a read and change them appropriately.
 3. I use Asia/Bangkok as timezone because it is my timezone. Change it to something else if you don't live on this timezone.
 4. I use nh with setup on ~/nixos. You may change the location if you don't like your configuration being on home folders. But I really think it's convenient.
-5. You do not need to fully master Nix to use this config. But at least use pattern recognition to realize what the config does. And honestly? that's enough.
-6. If you still don't know what to do, just install GNOME or KDE Plasma from NixOS calamares installer then use hardware-configuration.nix from it then use that working environment to develop with this sample config.
+5. What about dotfiles management? Same shit as how you would manage on Arch. ~/.config is unironically compatible with NixOS.
+6. You do not need to fully master Nix to use this config. But at least use pattern recognition to realize what the config does. And honestly? that's enough.
+7. If you still don't know what to do, just install GNOME or KDE Plasma from NixOS calamares installer then use hardware-configuration.nix from it then use that working environment to develop with this sample config.
 
 ## Explaining Defaults
 - Umbriel + Noctalia + Noctalia Greeter: While greeter is not even needed (I use ly myself), this is a sample config to demonstrate Noctalia ecosystem.
