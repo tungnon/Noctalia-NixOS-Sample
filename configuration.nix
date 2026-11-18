@@ -132,7 +132,7 @@
     nwg-look # change gtk3 settings here
     adw-gtk3 # default gtk3 theme
     wl-clipboard # clipboard for wayland duh
-    ffmpegthumbnailer # for Thunar video thumbnails
+    ffmpegthumbnailer # for video thumbnails
     foot # change to something else
   ];
 
