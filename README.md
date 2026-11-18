@@ -8,7 +8,7 @@ Because NixOS has one massive problem: how do we even start this thing? I am her
 The config is intentionally minimal and simple to understand. Only nixpkgs umbriel noctalia and luciole are flakes while other stuff are simple and straightforward. No elaborate abstraction like home manager, hjem, impermenance or dendritic.
 In fact, the config alone is ready to be used for everyday basis with only some minor adjustments for your hardware.
 
-## Target
+## Target Audiences
 If this is first time you are using Linux, go back. This rabbit hole isn't for you. If you are Arch user? Welcome this thing is for you.
 
 ## Things that you need to do first before using these config
