@@ -18,6 +18,7 @@ Edit: Luciole has been added because it's file manager for Noctalia ecosystem. W
 
 ## Explaining Defaults
 - Umbriel + Noctalia + Noctalia Greeter: While greeter is not even needed (I use ly myself), this is a sample config to demonstrate Noctalia ecosystem.
+- Luciole as file manager: technically not needed but it offers best noctalia experience so why not add it here?
 - nh: Once you know how to use nh, you can't practically go back using "official commands".
 - Latest Kernel: I would rather have modern computer working than gambling with LTS kernel which may not work with new hardware.
 - Foot as terminal: most simple terminal for wayland. If you want other options, change it.
